@@ -35,7 +35,7 @@ describe Cli::Publish do
 
     context 'when a tag is provided' do
       let(:desired_tag) { 'foo-1.7.12' }
-      let(:cli_args) { ['github', desired_tag] }
+      let(:cli_args) { [desired_tag] }
 
       it 'gets the book at that tag' do
         stub_github_for 'fantastic/dogs-repo', desired_tag
